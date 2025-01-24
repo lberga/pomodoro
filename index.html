@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mdc-typography--headline4">Pomodoro Timer</h1>
+        
+        <div class="mode-switch">
+            <button id="workMode" class="mdc-button mdc-button--raised active">
+                <span class="mdc-button__label">Work Mode</span>
+            </button>
+            <button id="breakMode" class="mdc-button mdc-button--outlined">
+                <span class="mdc-button__label">Break Mode</span>
+            </button>
+        </div>
+
+        <div class="timer-display">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="controls">
+            <button id="startBtn" class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Start</span>
+            </button>
+            <button id="pauseBtn" class="mdc-button mdc-button--outlined" disabled>
+                <span class="mdc-button__label">Pause</span>
+            </button>
+            <button id="resetBtn" class="mdc-button mdc-button--outlined">
+                <span class="mdc-button__label">Reset</span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
